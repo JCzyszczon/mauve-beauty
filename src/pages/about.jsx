@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Logo from '../img/logo.png';
 import Profile from '../img/profile.png'
 import { FaArrowRight } from 'react-icons/fa';
@@ -8,7 +8,6 @@ import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 
 const About = () => {
-    const [isOpen, setIsOpen] = useState(false);
 
     const {ref, inView} = useInView({
       threshold: 0.5,

@@ -12,6 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         'navbarBg': "url('img/navbar.png')",
+        'galleryBg': "url('img/gallery.png')",
       },
       keyframes: {
         bounce: {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import {FaBars, FaTimes } from 'react-icons/fa';
 import MainPic from '../img/mainPic.jpg';
 import { useInView } from 'react-intersection-observer';
@@ -14,12 +14,6 @@ const Navbar = () => {
     });
     const animationPic = useAnimation();
     const animationText = useAnimation();
-
-    const myComponentRef = useRef(null);
-
-    const handleClickScroll = () => {
-        myComponentRef.current.scrollIntoView({ behavior: 'smooth' });
-    };
   
     useEffect(() => {
         if(inView) {
