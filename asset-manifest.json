@@ -1,9 +1,25 @@
 {
   "files": {
-    "main.css": "/mauve-beauty/static/css/main.6da1a810.css",
-    "main.js": "/mauve-beauty/static/js/main.e6a72c23.js",
+    "main.css": "/mauve-beauty/static/css/main.ddaaa0a1.css",
+    "main.js": "/mauve-beauty/static/js/main.484b0d81.js",
+    "static/media/gallery.png": "/mauve-beauty/static/media/gallery.bef22a53c590b93f79ae.png",
     "static/media/navbar.png": "/mauve-beauty/static/media/navbar.4cd2d2ec0b848fec0737.png",
     "static/media/profile.png": "/mauve-beauty/static/media/profile.8c83c0205493ac1bf928.png",
+    "static/media/4 (2).PNG": "/mauve-beauty/static/media/4 (2).2bfe457641dfaa3c4bc1.PNG",
+    "static/media/1 (2).PNG": "/mauve-beauty/static/media/1 (2).bae29e9f71042e63a649.PNG",
+    "static/media/3 (2).PNG": "/mauve-beauty/static/media/3 (2).5f3f5be97d6993373516.PNG",
+    "static/media/2 (2).PNG": "/mauve-beauty/static/media/2 (2).a447a653510a6e4d9794.PNG",
+    "static/media/IMG_8706 (1).jpg": "/mauve-beauty/static/media/IMG_8706 (1).ecfd68f28ff4d6285c62.jpg",
+    "static/media/IMG_8705 (1).jpg": "/mauve-beauty/static/media/IMG_8705 (1).3a4e5fdc96d8a57b7745.jpg",
+    "static/media/5 (2).PNG": "/mauve-beauty/static/media/5 (2).87fc3592f57300249a43.PNG",
+    "static/media/IMG_4302 (1).JPG": "/mauve-beauty/static/media/IMG_4302 (1).01d90c108e1ff8df46d1.JPG",
+    "static/media/IMG_8707 (1).jpg": "/mauve-beauty/static/media/IMG_8707 (1).e9e144d85b3115677611.jpg",
+    "static/media/IMG_8708 (1).jpg": "/mauve-beauty/static/media/IMG_8708 (1).cd56df1363159d0d301b.jpg",
+    "static/media/IMG_8703 (1).jpg": "/mauve-beauty/static/media/IMG_8703 (1).f9f0658d842f31622712.jpg",
+    "static/media/IMG_8702 (1).jpg": "/mauve-beauty/static/media/IMG_8702 (1).ce1e2065a6a30daba453.jpg",
+    "static/media/AC9E7A50-BDEB-4C7F-9661-876CCBB54843 (1).JPG": "/mauve-beauty/static/media/AC9E7A50-BDEB-4C7F-9661-876CCBB54843 (1).5d202d706fc8c1d5763c.JPG",
+    "static/media/043BEC38-2874-4AA4-B0E3-B0E6CBD6B4F2 3 (1).JPG": "/mauve-beauty/static/media/043BEC38-2874-4AA4-B0E3-B0E6CBD6B4F2 3 (1).4be99ff040024fa3c02a.JPG",
+    "static/media/38EE9E7D-5F5E-4DD0-B76F-A3E11D2FE1BE (1).JPG": "/mauve-beauty/static/media/38EE9E7D-5F5E-4DD0-B76F-A3E11D2FE1BE (1).fb611faa1280a0757e14.JPG",
     "static/media/TheSeasonsLight.ttf": "/mauve-beauty/static/media/TheSeasonsLight.a7164dea6a70d4306f27.ttf",
     "static/media/bg-img.jpg": "/mauve-beauty/static/media/bg-img.d47c4ed5b5f845560951.jpg",
     "static/media/Klein-Book.ttf": "/mauve-beauty/static/media/Klein-Book.9dcf30f50fb7f1b615a4.ttf",
@@ -12,11 +28,11 @@
     "static/media/logo.png": "/mauve-beauty/static/media/logo.1ffc7aae1c9dcb945a18.png",
     "static/media/Maghony.ttf": "/mauve-beauty/static/media/Maghony.121bc3fd4748246c8d8e.ttf",
     "index.html": "/mauve-beauty/index.html",
-    "main.6da1a810.css.map": "/mauve-beauty/static/css/main.6da1a810.css.map",
-    "main.e6a72c23.js.map": "/mauve-beauty/static/js/main.e6a72c23.js.map"
+    "main.ddaaa0a1.css.map": "/mauve-beauty/static/css/main.ddaaa0a1.css.map",
+    "main.484b0d81.js.map": "/mauve-beauty/static/js/main.484b0d81.js.map"
   },
   "entrypoints": [
-    "static/css/main.6da1a810.css",
-    "static/js/main.e6a72c23.js"
+    "static/css/main.ddaaa0a1.css",
+    "static/js/main.484b0d81.js"
   ]
 }
