@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mauve-beauty/static/css/main.ddaaa0a1.css",
-    "main.js": "/mauve-beauty/static/js/main.484b0d81.js",
+    "main.css": "/mauve-beauty/static/css/main.7e36b588.css",
+    "main.js": "/mauve-beauty/static/js/main.da54f2c4.js",
     "static/media/gallery.png": "/mauve-beauty/static/media/gallery.bef22a53c590b93f79ae.png",
     "static/media/navbar.png": "/mauve-beauty/static/media/navbar.4cd2d2ec0b848fec0737.png",
     "static/media/profile.png": "/mauve-beauty/static/media/profile.8c83c0205493ac1bf928.png",
@@ -28,11 +28,11 @@
     "static/media/logo.png": "/mauve-beauty/static/media/logo.1ffc7aae1c9dcb945a18.png",
     "static/media/Maghony.ttf": "/mauve-beauty/static/media/Maghony.121bc3fd4748246c8d8e.ttf",
     "index.html": "/mauve-beauty/index.html",
-    "main.ddaaa0a1.css.map": "/mauve-beauty/static/css/main.ddaaa0a1.css.map",
-    "main.484b0d81.js.map": "/mauve-beauty/static/js/main.484b0d81.js.map"
+    "main.7e36b588.css.map": "/mauve-beauty/static/css/main.7e36b588.css.map",
+    "main.da54f2c4.js.map": "/mauve-beauty/static/js/main.da54f2c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddaaa0a1.css",
-    "static/js/main.484b0d81.js"
+    "static/css/main.7e36b588.css",
+    "static/js/main.da54f2c4.js"
   ]
 }
