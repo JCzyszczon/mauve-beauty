@@ -8,7 +8,7 @@ import { useAnimation } from 'framer-motion';
 const Footer = () => {
 
   const {ref, inView} = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
   });
   const animationText = useAnimation();
   const animationText2 = useAnimation();
@@ -73,14 +73,16 @@ const Footer = () => {
         </motion.div>
         <motion.div animate={animationText2} className='w-full'>
           <h3 className='font-theSeasons font-bold uppercase lg:text-3xl text-xl text-[#000] border-b border-mainColor pb-2'>Kontakt</h3>
-          <div className='mt-8 flex flex-col justify-center items-start gap-5'>
-            <span className='flex justify-start items-center flex-wrap gap-5 text-[#000] lg:text-xl text-lg font-klein'><FaPhone></FaPhone> +48 123 123 123</span>
-            <span className='flex justify-start items-center flex-wrap gap-5 text-[#000] lg:text-xl text-lg font-klein'><IoMdMail></IoMdMail> przykladowyemail@gmail.com</span>
+          <div className='mt-8 flex justify-center items-center w-full h-[250px] border border-mainColor'>
+            <div className='flex items-start justify-start flex-col gap-2 px-2'>
+              <span className='flex justify-start items-center flex-wrap gap-2 text-[#000] lg:text-xl text-lg font-klein'><FaPhone></FaPhone> +48 123 123 123</span>
+              <span className='flex justify-start items-center flex-wrap gap-2 text-[#000] lg:text-xl text-lg font-klein'><IoMdMail></IoMdMail> przykladowyemail@gmail.com</span>
+            </div>
           </div>
         </motion.div>
         <motion.div animate={animationText3} className='w-full'>
-          <h3 className='font-theSeasons font-bold uppercase lg:text-3xl text-xl text-[#000] border-b border-mainColor pb-2'>Obserwuj mnie na</h3>
-          <div className='flex justify-center items-center mt-8 gap-5'>
+          <h3 className='font-theSeasons font-bold uppercase lg:text-3xl text-xl text-[#000] border-b border-mainColor pb-2'>Social media</h3>
+          <div className='flex justify-center items-center mt-8 gap-5 w-full h-[250px] border border-mainColor'>
             <a href="https://www.facebook.com/mauvebeautypl" target='_blank' rel="noreferrer"><FaFacebookSquare className='text-mainColor hover:text-hoverColor text-4xl'></FaFacebookSquare></a>
             <a href="https://www.instagram.com/mauve.pl/" target='_blank' rel="noreferrer"><FaInstagram className='text-mainColor hover:text-hoverColor text-4xl'></FaInstagram></a>
             <a href="https://tiktok.com" target='_blank' rel="noreferrer"><FaTiktok className='text-mainColor hover:text-hoverColor text-4xl'></FaTiktok></a>
@@ -90,7 +92,7 @@ const Footer = () => {
       <motion.section animate={animationText} className='w-full bg-navbarBg py-5 flex justify-between items-center lg:px-20 px-4 border-t-2 border-mainColor sm:flex-row flex-col sm:gap-0 gap-5'>
         <a href="/"><span className='font-maghony text-3xl tracking-widest uppercase'>mauve</span></a>
         <span className='text-lg text-center font-klein'>&copy; mauve.pl - wszelkie prawa zastrzeżone</span>
-        <span className='text-lg font-klein'>by <a href="https://github.com/JCzyszczon" target='_blank' rel="noreferrer" className='hover:text-mainColor'>jczyszczon</a></span>
+        <span className='text-lg font-klein'>by <a href="https://github.com/JCzyszczon" target='_blank' rel="noreferrer" className='hover:text-hoverColor'>jczyszczon</a></span>
       </motion.section>
     </footer>
   );

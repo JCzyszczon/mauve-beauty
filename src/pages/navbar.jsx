@@ -81,13 +81,13 @@ const Navbar = () => {
                         <a href="#" className='inline-block w-full hover:text-hoverColor'>Moje prace</a>
                     </li>
                     <li className='py-6 sm:text-2xl text-xl'>
-                        <button className='bg-mainColor hover:bg-hoverColor px-10 py-4 font-klein uppercase tracking-widest text-lg text-[#ece5df] hover:scale-105 duration-300'>Umów się</button>
+                        <a href="https://www.facebook.com/mauvebeautypl" className='bg-mainColor hover:bg-hoverColor px-10 py-4 font-klein uppercase tracking-widest text-lg text-[#ece5df] hover:scale-105 duration-300'>Umów się</a>
                     </li>
                 </ul>
             </nav>
             <aside className='flex-col justify-start items-center lg:mr-[12%] mr-0 md:flex hidden'>
                 <motion.h3 animate={animationText} className='lg:text-3xl text-2xl text-textColor font-theSeasons font-bold'>Profesjonalny makijaż na każdą okazję.</motion.h3>
-                <motion.button className='bg-mainColor hover:bg-hoverColor px-10 py-4 mt-5 font-klein uppercase tracking-widest lg:text-lg text-base text-[#ece5df] hover:scale-105 duration-300'>Umów się</motion.button>
+                <motion.a animate={animationText} href="https://www.facebook.com/mauvebeautypl" className='bg-mainColor hover:bg-hoverColor px-10 py-4 mt-5 font-klein uppercase tracking-widest lg:text-lg text-base text-[#ece5df] hover:scale-105 duration-300'>Umów się</motion.a>
             </aside>
         </section>
       </header>

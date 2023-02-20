@@ -90,8 +90,9 @@ const Gallery = () => {
   
     return (
         <article ref={ref} id='moje-prace' className='w-full min-h-full md:mt-0 mt-10 lg:px-0 sm:px-10 px-2 bg-galleryBg'>
-          <div className='lg:pl-[18%] pl-[0%] lg:pt-28 pt-16'>
-            <h2 className='font-theSeasons font-bold lg:text-start text-center sm:text-5xl text-4xl tracking-widest mb-10'>Moje Prace</h2>
+          <div className='lg:pl-[14%] pl-[0%] lg:pt-28 pt-16 flex justify-start items-end pb-10 gap-2 flex-wrap'>
+            <h2 className='font-theSeasons font-bold lg:text-start text-center sm:text-5xl text-4xl tracking-widest'>Moje Prace</h2>
+            <a href="https://www.instagram.com/mauve.pl/"><span className='text-base uppercase font-klein hover:underline'> &gt; zobacz na ig</span></a>
           </div>
           <motion.div animate={animationText} className='grid min-h-full lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 lg:mx-20 mx-0 lg:mt-20 mt-5 lg:gap-5 gap-2 pb-10'>
             {images.slice(0,count).map((image, index) => (
