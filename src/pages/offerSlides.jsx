@@ -114,7 +114,7 @@ const OfferSlides = () => {
                 {items.map((item, index) => {
                 return (
                     <motion.section key={item.id}>
-                        <SwiperSlide onClick={() => handleClick(index)} className='bg-[#eee] p-10 my-10 flex flex-col justify-center text-start items-center gap-5 group cursor-pointer drop-shadow-lg'>
+                        <SwiperSlide key={item.title} onClick={() => handleClick(index)} className='bg-[#eee] p-10 my-10 flex flex-col justify-center text-start items-center gap-5 group cursor-pointer drop-shadow-lg'>
                             <motion.h2 transition={{layout: {duration: 1, type: 'spring'}}} layout='position' className='font-theSeasons font-bold uppercase sm:text-2xl text-xl text-center'>{item.title}</motion.h2>
                             {openIndex === index && (
                             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.6}} className='flex flex-col gap-5 font-theSeasons sm:text-base text-[14px] my-3'>

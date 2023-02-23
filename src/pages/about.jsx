@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import Background from '../img/bg-img.jpg';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
+import { Link } from "react-scroll";
 
 const About = () => {
 
@@ -50,7 +51,7 @@ const About = () => {
     }, [inView]);
   
     return (
-      <main className='w-full h-full md:pt-0 pt-[89px]'>
+      <main className='w-full h-full md:pt-0 pt-[80px]'>
         <article ref={ref} id='o-mnie' className='lg:mt-44 md:mt-28 mt-0 bg-navbarBg flex justify-center lg:items-end items-center lg:gap-0 gap-5 w-full 2xl:h-[620px] h-auto lg:px-0 md:px-10 px-0 md:flex-row flex-col-reverse'>
             <motion.section transition={{layout: {duration: 1, type: 'spring'}}} layout className='w-full flex flex-col justify-center items-center font-theSeasons font-[500] lg:text-xl text-base lg:pl-[11%] md:text-start text-center md:px-0 px-4'>
                 <img src={Logo} alt="Logo" className='xl:w-[500px] w-[350px] h-auto md:flex hidden lg:mb-10'/>
@@ -61,7 +62,7 @@ const About = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore expedita praesentium, qui libero dolores sit nulla necessitatibus eaque pariatur porro debitis cum voluptate fugiat reprehenderit, alias perferendis magni provident.<br/><br/></p>
                 </motion.div>
                 <div className='flex justify-between items-center gap-3 xl:flex-row flex-col mt-4'>
-                  <button className='flex group justify-center items-center gap-5 md:w-[300px] bg-mainColor hover:bg-hoverColor px-10 py-4 font-klein uppercase tracking-widest lg:text-lg text-base text-[#ece5df] hover:scale-105 duration-300 mb-5'>Zobacz ofertę <FaArrowRight className='group-hover:rotate-90 duration-300'></FaArrowRight></button>
+                  <Link to='oferta' smooth='true' duration={100}><button className='flex group justify-center items-center gap-5 md:w-[300px] bg-mainColor hover:bg-hoverColor px-10 py-4 font-klein uppercase tracking-widest lg:text-lg text-base text-[#ece5df] hover:scale-105 duration-300 mb-5'>Zobacz ofertę <FaArrowRight className='group-hover:rotate-90 duration-300'></FaArrowRight></button></Link>
                 </div>
             </motion.section>
             <section className='w-full flex justify-center items-end my-0 relative'>

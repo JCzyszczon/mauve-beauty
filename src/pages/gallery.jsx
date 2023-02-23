@@ -3,6 +3,8 @@ import Modal from './modal';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Gallery = () => {
 
@@ -94,10 +96,10 @@ const Gallery = () => {
             <h2 className='font-theSeasons font-bold lg:text-start text-center sm:text-5xl text-4xl tracking-widest'>Moje Prace</h2>
             <a href="https://www.instagram.com/mauve.pl/"><span className='text-base uppercase font-klein hover:underline'> &gt; zobacz na ig</span></a>
           </div>
-          <motion.div animate={animationText} className='grid min-h-full lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 lg:mx-20 mx-0 lg:mt-20 mt-5 lg:gap-5 gap-2 pb-10'>
+          <motion.div animate={animationText} className='grid min-h-full lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 lg:mx-20 mx-0 lg:mt-10 mt-5 lg:gap-5 gap-2 pb-10'>
             {images.slice(0,count).map((image, index) => (
-              <div className='bg-[#000] cursor-pointer' onClick={() => getImg(image, index)}>
-                <img src={image} key={index} alt={`Image ${index}`} className='w-[430px] h-[100%] aspect-square hover:opacity-70 transition-all duration-100'/>
+              <div key={image} className='cursor-pointer hover:opacity-90 transition-all duration-100' onClick={() => getImg(image, index)}>
+                <LazyLoadImage effect='blur' src={image} alt={`Image ${index}`} className='w-[430px] h-full aspect-square'/>
               </div>
             ))}
           </motion.div>

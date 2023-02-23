@@ -4,6 +4,7 @@ import MainPic from '../img/mainPic.jpg';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { motion } from 'framer-motion';
+import { Link } from "react-scroll";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -46,17 +47,17 @@ const Navbar = () => {
     }, [inView]);
   
     return (
-      <header ref={ref} className='w-[100%] lg:h-[250px] md:h-[250px] h-[90px] bg-navbarBg flex md:py-0 py-5 md:relative fixed z-50'>
+      <header ref={ref} className='w-[100%] lg:h-[250px] md:h-[250px] h-[80px] bg-navbarBg flex md:py-0 py-1 md:relative fixed z-50'>
         <motion.section animate={animationPic} className='w-[60%] justify-center items-start lg:flex hidden'>
             <img src={MainPic} alt="Mauve Main Navbar" className='w-[270px] h-auto border-b border-[#000] pb-14 drop-shadow-2xl'/>
         </motion.section>
         <section className='w-full flex flex-wrap justify-center md:items-start items-center md:mt-10 mt-0'>
             <nav className='lg:w-full w-[90%] flex items-center justify-between lg:mr-[12%] mr-0 md:border-b border-b-0 border-[#000] pb-1'>
-                <h1 className='font-maghony sm:text-4xl text-2xl tracking-widest uppercase'><a href="/">Mauve</a></h1>
+                <h1 className='font-maghony sm:text-4xl text-2xl tracking-widest uppercase'><a href="/mauve-beauty">Mauve</a></h1>
                 <ul className='md:flex hidden items-center gap-10 uppercase font-klein font-bold text-lg tracking-widest'>
-                    <li className='hover:text-hoverColor duration-300'><a href="#o-mnie">o mnie</a></li>
-                    <li className='hover:text-hoverColor duration-300'><a href="#oferta">oferta</a></li>
-                    <li className='hover:text-hoverColor duration-300'><a href="#moje-prace">moje prace</a></li>
+                    <li className='hover:text-hoverColor duration-100 cursor-pointer'><Link to='o-mnie' smooth='true' duration={100}>o mnie</Link></li>
+                    <li className='hover:text-hoverColor duration-100 cursor-pointer'><Link to='oferta' smooth='true' duration={100}>oferta</Link></li>
+                    <li className='hover:text-hoverColor duration-100 cursor-pointer'><Link to='moje-prace' smooth='true' duration={100}>moje prace</Link></li>
                 </ul>
                 {/* Hamburger */}
                 <div onClick={handleClick} className='md:hidden z-10 text-xl'>
@@ -68,17 +69,17 @@ const Navbar = () => {
                     className={
                     !nav
                         ? 'hidden'
-                        : 'absolute top-[89px] left-0 w-full h-auto bg-navbarBg flex flex-col justify-center items-center font-klein uppercase'
+                        : 'absolute top-[79px] left-0 w-full h-auto bg-navbarBg flex flex-col justify-center items-center font-klein uppercase'
                     }
                 >
                     <li className='py-6 sm:text-2xl text-xl w-full text-center hover:bg-[#33333355]'>
-                        <a href="#" className='inline-block w-full hover:text-hoverColor'>O mnie</a>
+                        <Link to='o-mnie' smooth='true' duration={100} className='inline-block w-full hover:text-hoverColor' onClick={handleClick}>o mnie</Link>
                     </li>
                     <li className='py-6 sm:text-2xl text-xl w-full text-center hover:bg-[#33333355]'>
-                        <a href="#" className='inline-block w-full hover:text-hoverColor'>Oferta</a>
+                        <Link to='oferta' smooth='true' duration={100} className='inline-block w-full hover:text-hoverColor' onClick={handleClick}>oferta</Link>
                     </li>
                     <li className='py-6 sm:text-2xl text-xl w-full text-center hover:bg-[#33333355]'>
-                        <a href="#" className='inline-block w-full hover:text-hoverColor'>Moje prace</a>
+                        <Link to='moje-prace' smooth='true' duration={100} className='inline-block w-full hover:text-hoverColor' onClick={handleClick}>moje prace</Link>
                     </li>
                     <li className='py-6 sm:text-2xl text-xl'>
                         <a href="https://www.facebook.com/mauvebeautypl" className='bg-mainColor hover:bg-hoverColor px-10 py-4 font-klein uppercase tracking-widest text-lg text-[#ece5df] hover:scale-105 duration-300'>Umów się</a>
